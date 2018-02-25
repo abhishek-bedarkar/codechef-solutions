@@ -1,0 +1,25 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+double bal,rel;
+int wid;
+cin>>wid>>bal;
+ 
+if(wid%5 == 0 && wid+0.5 <= (int)bal && wid !=0 )
+{
+ rel=(bal-wid)-0.50;
+cout<<fixed<<setprecision (2)<<rel;
+}
+else
+{
+cout<<fixed<<setprecision (2)<<bal;
+ 
+}
+ 
+ 
+ 
+ 
+return 0;
+}
