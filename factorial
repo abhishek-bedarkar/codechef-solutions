@@ -1,0 +1,28 @@
+   #include<iostream>
+    #include<cmath>
+    using namespace std;
+    int main()
+    {
+    int N;
+    cin >> N;
+    while(N-- > 0 )
+    {
+    	long long inp;
+    	cin >> inp;
+    	long long res;
+    	long long ans=0;
+    	int i = 1;
+    	while(true)
+    	{
+    		res = inp / pow(5,i);
+    		if (res < 1)
+    			break;
+    		ans += res;
+    		i++;
+    	} 
+     
+    	cout << ans << endl;	
+    }
+     
+    return 0;
+    } 
